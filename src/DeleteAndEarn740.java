@@ -1,7 +1,7 @@
 import java.util.HashMap;
 
 class DeleteAndEarn740 {
-    // Q : delet the nums[i] and get the all nums[i] value, 
+    // Q : delete the nums[i] and get the all nums[i] value, 
     // and all nums[i + 1] & nums[i - 1] will be delete
     // return the max value we can get when we delete all element in array
     
@@ -13,7 +13,7 @@ class DeleteAndEarn740 {
     //    -> when we are at that number how max value we can get,
     //       so dp array length is largest nums[i] + 1(because start with 1)
     // 4. base case: dp[1] -> when we delete 1, we can only get total 1's value
-    // 5. itereate dp length and recurrence relation to fill all state
+    // 5. iterate dp length and recurrence relation to fill all state
     // 6. recurrence relation:
     //    when we are at i, we can choose either (i - 1)'s total points or (i - 2)'s total points + i's total value, 
     //    so compare them and choose larger one put in dp[i]
