@@ -8,7 +8,7 @@ public class SplitArrayLargestSum {
     // so we use a method to split the subarray when subarray sum is larger than mid(current subarray maximum sum)
     // if the # of split subarray not larger than m
     // keep update the mid to split array largest sum
-    // and made right smaller to found the percise split array largest sum
+    // and made right smaller to found the precise split array largest sum
     public int split(int[] nums, int maxSum){
         int currentsum = 0;
         int splitnumber = 0;
@@ -42,7 +42,7 @@ public class SplitArrayLargestSum {
             // split method: O(n) time; each call iterate n element 
             if(split(nums, mid) <= m){ // if # of splited subarray not larger than m
                 right = mid - 1; // move right to mid - 1 (smaller the range to left side of mid)
-                splitlargestsum = mid; // updat the splited subarray largest sum to mid
+                splitlargestsum = mid; // update the splited subarray largest sum to mid
             }else{
                 left = mid + 1; // if # of splited subarray larger than m, move left to mid + 1(right side of the mid)
             }
