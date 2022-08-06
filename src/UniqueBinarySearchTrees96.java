@@ -8,7 +8,7 @@ public class UniqueBinarySearchTrees96 {
         // dp(0) = 1, when have 0 node, total combination is 1
         // dp(1) = 1, when have 1 node, total combination is 1
         // recurrence relation:
-        // # of i nodes combintation 
+        // # of i nodes combination 
         //   -> (# of nodes that is at root node left side) * (# of nodes that is at root node right side)
         // choose j as the root node 
         //   -> dp(i) += dp(j - 1) * dp(i - j)
